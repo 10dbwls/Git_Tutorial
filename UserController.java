@@ -21,4 +21,11 @@ public class UserController {
 		logger.info("login: update");
 		return "user/update";
 	}
+
+	//회원삭제 페이지로 이동
+	@RequestMapping("/user/delete.do")
+	public String delete() {
+		logger.info("login: delete");
+		return "user/delete";
+	}
 }
