@@ -8,11 +8,14 @@ public class UserController {
 		return "user/login";
 	}
 
+	//회원추가 페이지로 이동
 	@RequestMapping("/user/insert.do")
 	public String insert() {
 		logger.info("login: insert");
 		return "user/insert";
 	}
+
+	//회원수정 페이지로 이동
 	@RequestMapping("/user/update.do")
 	public String update() {
 		logger.info("login: update");
