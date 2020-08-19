@@ -21,4 +21,14 @@ public class UserController {
 		logger.info("login: update");
 		return "user/update";
 	}
+
+	// master 브랜치에 주석 추가
+	// 회원 탈퇴시 세션 삭제
+
+	//회원삭제 페이지로 이동
+	@RequestMapping("/user/delete.do")
+	public String delete() {
+		logger.info("login: delete");
+		return "user/delete";
+	}
 }
